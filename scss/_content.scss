@@ -1,0 +1,75 @@
+.content{
+    //background-color: red;
+    flex: 1; //faz com que o elemento filho ocupe toda área restante
+    margin-right: 60px;
+
+    @media (max-width: 767px) {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .logo{
+        margin-bottom: 50px;
+
+        @media (min-width: 768px){
+
+            margin-bottom: 50px;
+        }
+        
+        // @media (max-width: 767px){
+        //     margin-bottom: 0;
+        //}
+    }
+
+    h1{
+        font-size: 32px;
+        color: $colorTitle; 
+    }
+
+    p{
+        color: $colorText;
+    }
+
+    form{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+
+        label{
+            color: $colorText;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        input{
+            display: block; 
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            outline: none; //o ato de selecionar o mouse sem esse comando aparece como se fosse uma bordar da borda e colocando o NONE ele some
+            border-bottom: 2px solid $grayLight;
+
+            // &:hover {
+            //     border-bottom: 2px solid $colorText;
+            // }
+
+            &:focus{
+                border-bottom: 2px solid red;
+            }
+        }
+
+        button{
+            @include btn();
+        }
+
+
+
+    }
+
+
+
+
+}

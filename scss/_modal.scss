@@ -1,0 +1,52 @@
+.closed{
+    display: none !important;
+}
+
+.bg-modal{
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .modal{
+        width: 90%;
+        max-width: 500px;
+        height: 300px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 30px;
+        position: relative; //para servir de referência ao absolute #btn-modal, (esse position toma posição a onde ele está relacionado)
+
+        h2{
+            font-size: 32px;
+            color: #1e1e1e;
+            line-height: 100%;
+
+            @media (max-width: 767px){
+                font-size: 24px;
+            }
+        }
+
+        #btn-modal{
+            font-size: 32px;
+            position: absolute; //posição em relação ao elemento pai desde que ele tenha position
+            color: white;
+            top: -30px;
+            right: -20px;
+            line-height: 100%;
+        }
+
+        
+        
+
+    }
+}

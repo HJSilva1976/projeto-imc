@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body> 
+
+    <div class="bg-modal closed">
+        <div class="modal">
+            <a href="#" id="btn-modal">X</a>
+            <h2>Seu IMC é:<br><span class="resultado"></span></h2>
+            <h2>Classificação:<br><span class="classificacao"></span></h2>
+
+        </div>
+
+    </div>
+
+    <div class="lgpd">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam voluptas optio magni aspernatur modi corporis ipsam. Nesciunt eius velit veritatis?</p>
+        <button id="btn-lgpd" onclick="fecharLgpd()">Estou ciente</button>
+
+    </div>
+
+    <div class="container">
+
+        <div class="image"></div>
+
+        <div class="content">
+            <div class="logo">
+                <img src="img/logo.svg" alt="imagem do logo da empresa">
+
+            </div>
+
+            <h1>Calcule seu IMC</h1>
+            <p>Preencha as informações abaixo para calcular</p>
+
+            <form autocomplete="off">
+                <div>
+                    <label for="peso">Digite seu peso</label>
+                    <input type="number" id="peso" step="any">
+                </div>
+
+                <div>
+                    <label for="altura">Digite sua altura</label>
+                    <input type="number" id="altura" step="any">
+                </div>
+
+                <button type="button" id="btn">Calcular IMC</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
